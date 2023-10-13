@@ -1,0 +1,168 @@
+/* TAILWIND CONFIGS */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ROOT STYLES */
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--secondary) var(--primary);
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 6px;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(249, 115, 22, 0.7);
+  border-style: none;
+  border-radius: 9999px;
+}
+
+/* SECTIONS */
+
+.section_hidden {
+  opacity: 0;
+  filter: blur(4px);
+  transform: translateX(-100%);
+  transition: all 1.2s ease-in-out;
+}
+
+.section_show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+/* BANNER SECTION */
+.banner_background {
+  background-image: url("./assets/Africa_7.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.blob {
+  scale: 0;
+  transition: all 1.2s ease-in-out;
+}
+
+.blob_enlarged {
+  scale: 1;
+}
+
+/* CARDS */
+
+.card {
+  scale: 1;
+}
+.card:hover {
+  scale: 105%;
+}
+
+/* SERVICE CARD */
+
+.service:nth-child(2) {
+  transition-delay: 250ms;
+}
+.service:nth-child(3) {
+  transition-delay: 500ms;
+}
+
+.service:nth-child(4) {
+  transition-delay: 750ms;
+}
+
+/* WORK CARD */
+
+.work:nth-child(2) {
+  transition-delay: 250ms;
+}
+.work:nth-child(3) {
+  transition-delay: 500ms;
+}
+
+.work:nth-child(4) {
+  transition-delay: 750ms;
+}
+
+/* SKILL SECTION */
+.skill:nth-child(2) {
+  transition-delay: 500ms;
+}
+
+@media (prefers-reduced-motion) {
+  .section_hidden {
+    transition: none;
+  }
+}
+/* BANNER SECTION STYLING */
+.custom-shape-divider-bottom-1694798206 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+  z-index: 10;
+}
+
+.custom-shape-divider-bottom-1694798206 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 50px;
+}
+
+.custom-shape-divider-bottom-1694798206 .shape-fill {
+  fill: rgb(241, 245, 249);
+}
+
+/* SKILLS SECTION STYLING */
+.custom-shape-divider-bottom-1694799701 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1694799701 svg {
+  position: relative;
+  display: block;
+  width: calc(119% + 1.3px);
+  height: 55px;
+}
+
+.custom-shape-divider-bottom-1694799701 .shape-fill {
+  fill: #ffffff;
+}
+
+/* WORK SECTION STYLING */
+.custom-shape-divider-bottom-1694798741 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1694798741 svg {
+  position: relative;
+  display: block;
+  width: calc(119% + 1.3px);
+  height: 55px;
+}
+
+.custom-shape-divider-bottom-1694798741 .shape-fill {
+  fill: #f1f5f9;
+}
