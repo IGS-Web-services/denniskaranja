@@ -1,4 +1,4 @@
-const WorkCard = ({ image, name, description }) => {
+const WorkCard = ({ image, name, description, link }) => {
   return (
     <section className="work   rounded-lg  aspect-square w-full flex flex-col items-center justify-start h-full   cursor-pointer pb-1  ">
       <figure className="rounded-l w-full h-[60%] relative group ">

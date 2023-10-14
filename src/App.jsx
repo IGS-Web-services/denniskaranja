@@ -57,7 +57,7 @@ function App() {
   }, [sectionObserver, blobObserver]);
 
   return (
-    <main id='home' className="banner_background w-full h-screen overflow-auto flex flex-col overflow-x-hidden">
+    <main  className="banner_background w-full h-screen overflow-auto flex flex-col overflow-x-hidden">
       <Navbar/>
       <Banner />
       <Services />

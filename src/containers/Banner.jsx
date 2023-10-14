@@ -4,13 +4,13 @@ import resume from "../assets/resume.pdf";
 const Banner = () => {
   return (
     <article
-      id="about"
-      className="backdrop-blur-sm bg-black/40 relative w-full md:h-1--vh flex flex-col items-center md:flex-row gap-16 p-16 "
+      id="home"
+      className="backdrop-blur-sm bg-black/40 relative w-full md:h-1--vh flex flex-col items-center md:flex-row gap-16 pt-24 "
     >
       <figcaption className="section_hidden  relative w-full md:w-[50%] flex flex-col items-center md:items-start justify-center  debug text-center h-full ">
         <section className="w-full h-full flex flex-col gap-2 items-start justify-center p-4">
-          <h2 className="text-2xl sm:text-4xl uppercase font-bold text-white ">
-            I am <span className="text-orange-600">Dennis Karanja </span>
+          <h2 className="text-2xl sm:text-4xl font-bold text-white ">
+          <span className="uppercase "> Hi, <br/></span> I am <span className="text-designColor uppercase ">Dennis Karanja </span>
           </h2>
           <p className="text-md text-white sm:text-lg text-center md:text-start pt-3 pb-10 ">
             A <span className="">Mechatronic Engineer</span> with keen
@@ -26,11 +26,14 @@ const Banner = () => {
           </a>
         </section>
       </figcaption>
-      <img
-        className="md:w-[400px]  h-auto rounded-full"
+      <div className="bg-slate-100 sm:mt-24 ">
+        <img
+        className="md:w-[400px] -mt-10 h-auto "
         src={banner}
         alt="Banner Image "
       />
+      </div>
+      
       <div className="custom-shape-divider-bottom-1694798741">
         <svg
           data-name="Layer 1"
